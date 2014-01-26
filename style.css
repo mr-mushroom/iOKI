@@ -1,0 +1,46 @@
+@import 'reset.css';
+
+body {font-family: Verdana; color: #333333;}
+section {margin: 10px auto; padding: 20px; background: #f7f6f6; width: 900px; overflow: hidden; position: relative;}
+nav {margin: 10px auto; padding: 20px 0; width: 940px; overflow: hidden; position: relative; position: relative;}
+h1 {color: #4654AB; font-size: 24px; font-weight: bold;}
+p.instructions {font-size: 18px; font-weight: bold;}
+
+.frame {border: 1px solid #cddbe1; background: #e7ebee;}
+
+.grid {width: 240px; text-align: center; float: left; margin: 0 30px; padding: 15px 0;}
+.answer {padding: 40px 10px 10px; position: relative;}
+.exercise2 .answer {padding: 0;}
+.example:before {content: "Example"; position: absolute; top: 10px; left: 20px;}
+.answers {display: block; width: 700px; margin: 20px auto; padding: 20px; text-align: center; clear: both;}
+
+.photos {position: relative; height: 260px; margin: 30px auto;}
+.numbered {border: 6px solid #fff; position: absolute; -moz-box-shadow: 0px 0px 4px #ccc; -webkit-box-shadow: 0px 0px 4px #ccc; box-shadow: 0px 0px 4px #ccc;}
+.numbered:before {content: attr(title); position: absolute; top: 0px; left: 0px; padding: 3px; background: #fff;}
+.numbered:nth-of-type(1) {top: 0px; left: 180px; -webkit-transform: rotate(4deg);}
+.numbered:nth-of-type(2) {top: 0px; left: 350px; -webkit-transform: rotate(-3deg);}
+.numbered:nth-of-type(3) {top: 0px; left: 520px; -webkit-transform: rotate(3deg);}
+.numbered:nth-of-type(4) {top: 130px; left: 180px; -webkit-transform: rotate(-2deg);}
+.numbered:nth-of-type(5) {top: 130px; left: 350px; -webkit-transform: rotate(3deg);}
+.numbered:nth-of-type(6) {top: 130px; left: 520px; -webkit-transform: rotate(-3deg);}
+
+.answers input[type=text] {width: 30px; float: left;}
+.answers label {width: 197px; display: block; float: left; text-align: left; line-height: 24px;}
+
+.answer.right, .answer.wrong {background-position: 210px 40px; background-repeat: no-repeat;}
+.answer.right {background-image: url(images/icons/correct.png);}
+.answer.wrong {background-image: url(images/icons/wrong.png);}
+.exercise2 .right, .exercise2 .wrong {background-position: 160px 0px;}
+
+input[type=button] {position: absolute; bottom: 50px; right: 40px; text-indent: -9999px; background: #299fc5 url(images/icons/tick_white.png) center center no-repeat scroll; width: 40px; height: 40px; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; -khtml-border-radius: 20px; border: none; cursor: pointer;}
+input[type=button].reload {background-image: url(images/icons/refresh_white.png);}
+
+.prev, .next {display: block; width: 30px; height: 30px; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; -khtml-border-radius: 20px; text-indent: -9999px; float: left; position: relative; z-index: 100;}
+.prev {background: #299fc5 url(images/icons/arrow_left_white.png) center center no-repeat scroll; margin: 0 5px 0 70px;}
+.next {background: #299fc5 url(images/icons/arrow_right_white.png) center center no-repeat scroll; margin: 0 70px 0 5px;}
+
+nav li {display: inline-block;}
+nav a {border: 3px solid #299fc5; background: #fff; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; -khtml-border-radius: 20px; display: block; position: relative; z-index: 100;}
+nav li:nth-of-type(3n + 1) a {width: 20px; height: 20px; line-height: 20px; text-align: center; text-decoration: none; color: #299fc5; margin: 5px 30px 0 0;}
+nav li:nth-of-type(3n + 2) a, nav li:nth-of-type(3n + 3) a {width: 10px; height: 10px; text-indent: -9999px;margin: 11px 30px 0 0;}
+nav .line {position: absolute; width: 100%; height: 3px; top: 37px; left: 0px; background: #299fc5; z-index: 1;}
